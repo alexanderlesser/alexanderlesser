@@ -1,6 +1,6 @@
 import React from "react";
 
-const SvgAboutHeaderImage = () => {
+const SvgAboutHeaderImage = ({ mainImageColor }) => {
   return (
     <>
       <svg
@@ -188,7 +188,7 @@ const SvgAboutHeaderImage = () => {
               id="b540f353-e277-4512-bc56-a133cea2858b"
               width="611.46"
               height="25.977"
-              fill="#6c63ff"
+              fill={mainImageColor}
             />
             <circle
               id="b2b285b5-c1c3-4b12-9710-2898c7239781"
@@ -215,13 +215,13 @@ const SvgAboutHeaderImage = () => {
               id="b4a2d72b-abc3-4d2f-a2b8-a2aff6897b26"
               transform="translate(-177.14 -97.984)"
               d="m297.74 192.21-38.133 37.657 38.133 37.656 8.58-8.58-28.835-28.839 29.076-29.076z"
-              fill="#6c63ff"
+              fill={mainImageColor}
             />
             <path
               id="b5120d89-6cbe-4bfa-9a1b-cf9b07deff91"
               transform="translate(-177.14 -97.984)"
               d="m328.99 192.21 38.132 37.657-38.132 37.656-8.58-8.58 28.837-28.838-29.078-29.077z"
-              fill="#6c63ff"
+              fill={mainImageColor}
             />
             <path
               id="a31271bd-8e2f-469b-8cee-8b6db3f92f99"
@@ -246,13 +246,13 @@ const SvgAboutHeaderImage = () => {
               id="fb0f055d-da6e-47f2-bb6d-7ff26d7b746a"
               transform="translate(-177.14 -97.984)"
               d="m370.69 359.66a4.006 4.006 0 0 0-0.0104 8.012h188.87a4.006 4.006 0 0 0 0-8.012z"
-              fill="#6c63ff"
+              fill={mainImageColor}
             />
             <path
               id="bfcde504-8c45-4d21-843b-87b1f7e22ce0"
               transform="translate(-177.14 -97.984)"
               d="m370.69 383.69a4.006 4.006 0 0 0-0.0104 8.012h81.276a4.006 4.006 0 0 0 0.0104-8.012z"
-              fill="#6c63ff"
+              fill={mainImageColor}
             />
             <path
               id="a66699ea-75f1-4575-b6d5-52b0b1f8e30c"
@@ -343,7 +343,7 @@ const SvgAboutHeaderImage = () => {
             y="415.83"
             width="97.072"
             height="6.6323"
-            fill="#6c63ff"
+            fill={mainImageColor}
           />
           <rect
             id="rect693"
@@ -351,7 +351,7 @@ const SvgAboutHeaderImage = () => {
             y="542.44"
             width="34.367"
             height="6.6323"
-            fill="#6c63ff"
+            fill={mainImageColor}
           />
           <rect
             id="rect695"
@@ -359,7 +359,7 @@ const SvgAboutHeaderImage = () => {
             y="554.5"
             width="98.278"
             height="6.6323"
-            fill="#6c63ff"
+            fill={mainImageColor}
           />
           <rect
             id="rect697"
@@ -446,7 +446,7 @@ const SvgAboutHeaderImage = () => {
           <path
             id="path1050"
             d="m251.98 149.37-34.003-58.895a2.4215 2.4215 0 0 0-4.1941 0l-20.751 35.942-30.936-53.582a3.1047 3.1047 0 0 0-5.3774 0l-43.596 75.511a3.1046 3.1046 0 0 0 2.6887 4.657h134.07a2.4215 2.4215 0 0 0 2.0971-3.6322z"
-            fill="#6c63ff"
+            fill={mainImageColor}
           />
           <rect
             id="rect1052"
@@ -459,7 +459,7 @@ const SvgAboutHeaderImage = () => {
           <path
             id="path972"
             d="m1036.7 82.456 0.2391 180.11a12.626 12.626 0 0 1-12.593 12.63l-74.817 0.10967c21.062-39.4 32.987-101.41 32.917-149.22a281.27 281.27 0 0 0-5.721-56.161l47.345-0.0694a12.626 12.626 0 0 1 12.63 12.593z"
-            fill="#6c63ff"
+            fill={mainImageColor}
           />
           <path
             id="path976"
@@ -469,7 +469,7 @@ const SvgAboutHeaderImage = () => {
           <path
             id="path978"
             d="m1001.5 43.077a14 14 0 0 0-14 14h28a14 14 0 0 0-14-14z"
-            fill="#6c63ff"
+            fill={mainImageColor}
           />
           <path
             id="path980"
@@ -507,7 +507,13 @@ const SvgAboutHeaderImage = () => {
             d="m684.48 86.077a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10zm0-18a8 8 0 1 0 8 8 8.0092 8.0092 0 0 0-8-8z"
             fill="#3f3d56"
           />
-          <circle id="circle996" cx="684.48" cy="76.077" r="5" fill="#6c63ff" />
+          <circle
+            id="circle996"
+            cx="684.48"
+            cy="76.077"
+            r="5"
+            fill={mainImageColor}
+          />
           <circle id="circle998" cx="710.48" cy="76.077" r="5" fill="#ccc" />
           <circle id="circle1000" cx="736.48" cy="76.077" r="5" fill="#ccc" />
           <path

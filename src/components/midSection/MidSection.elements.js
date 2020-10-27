@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
-export const HeaderBackground = styled.div`
+
+export const MidSec = styled.div`
   width: 100%;
   height: 100%;
   background: ${({ lightBg }) => (lightBg ? "#a6acb3" : "#202121")};
@@ -17,7 +17,7 @@ export const HeaderBackground = styled.div`
   }
 `;
 
-export const HeaderRow = styled.div`
+export const MidRow = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
@@ -35,7 +35,7 @@ export const HeaderRow = styled.div`
   }
 `;
 
-export const Column = styled(motion.div)`
+export const Column = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 10px;

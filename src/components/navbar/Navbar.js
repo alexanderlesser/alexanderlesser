@@ -1,16 +1,31 @@
 import React, { useState } from "react";
 import LogoIcon from "../svgs/LogoIcon";
+import { FaTimes, FaBars } from "react-icons/fa";
 import {
   Nav,
-  NavbarContainer,
-  IconBox,
-  MobileMenuIcon,
+  NavContainer,
+  NavLogo,
+  NavMenuBox,
   NavMenu,
   NavItem,
   NavLinks,
-  BurgerMenu,
-  Cross,
+  MobileMenuIcon,
+  BurgerBox,
+  MobileIconBox,
 } from "./Navbar.elements";
+
+const navVariants = {
+  hidden: {
+    opacity: 0,
+  },
+
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 3,
+    },
+  },
+};
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -22,27 +37,45 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavbarContainer>
-          <IconBox to="/">
+        <NavContainer>
+          <NavLogo to="/" onClick={handleClick}>
             <LogoIcon />
-          </IconBox>
-          <MobileMenuIcon onClick={handleClick}>
-            {click ? <Cross /> : <BurgerMenu />}
-          </MobileMenuIcon>
-          <NavMenu onClick={handleClick} click={click}>
-            <NavItem>
-              <NavLinks to="/">Home</NavLinks>
-            </NavItem>
+          </NavLogo>
+          <MobileIconBox onClick={handleClick}>
+            <MobileMenuIcon>
+              <BurgerBox onClick={handleClick}>
+                {click ? <FaTimes /> : <FaBars />}
+              </BurgerBox>
+            </MobileMenuIcon>
+          </MobileIconBox>
+          <NavMenuBox onClick={handleClick} click={click}>
+            <NavMenu>
+              <NavItem
+                variants={navVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <NavLinks to="/">Home</NavLinks>
+              </NavItem>
 
-            <NavItem>
-              <NavLinks to="/about">About me</NavLinks>
-            </NavItem>
+              <NavItem
+                variants={navVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <NavLinks to="/about">About Me</NavLinks>
+              </NavItem>
 
-            <NavItem>
-              <NavLinks to="/portfolio">Portfolio</NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
+              <NavItem
+                variants={navVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <NavLinks to="/">Portfolio</NavLinks>
+              </NavItem>
+            </NavMenu>
+          </NavMenuBox>
+        </NavContainer>
       </Nav>
     </>
   );

@@ -1,46 +1,48 @@
 import React from "react";
-import SvgAboutBackground from "../svgs/SvgAboutBackground";
-import SvgAboutImage from "../svgs/SvgAboutHeaderImage";
-import { Container } from "../../GlobalStyles";
-import {
-  HeaderBackground,
-  HeaderRow,
-  Column,
-  TextBox,
-  TopLine,
-  MainText,
-  Description,
-  ImgBox,
-  BackgroundImage,
-} from "./Header.elements";
+import SvgHeaderImage from "../svgs/SvgHeaderImage";
+import TextSection from "../textSection/TextSection";
+import { HeaderBackground, HeaderRow, Column, ImgBox } from "./Header.elements";
 
-const AboutHeader = ({
+const columnVariants = {
+  hidden: {
+    x: "-100vw",
+  },
+  visible: {
+    x: 10,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const Header = ({
   lightBg,
   flexDirectionRow,
   lightText,
   topLine,
   mainLine,
   description,
+  mainImageColor,
+  children,
+  children2,
 }) => {
-  console.log(lightBg);
-
   return (
     <>
       <HeaderBackground lightBg={lightBg}>
-        <BackgroundImage>
-          <SvgAboutBackground />
-        </BackgroundImage>
         <HeaderRow flexDirectionRow={flexDirectionRow}>
-          <Column>
-            <TextBox>
-              <TopLine lightText={lightText}>{topLine}</TopLine>
-              <MainText lightText={lightText}>{mainLine}</MainText>
-              <Description lightText={lightText}>{description}</Description>
-            </TextBox>
+          <Column variants={columnVariants} initial="hidden" animate="visible">
+            <TextSection
+              lightText={lightText}
+              topLine={topLine}
+              mainLine={mainLine}
+              description={description}
+            >
+              {children}
+            </TextSection>
           </Column>
           <Column>
             <ImgBox>
-              <SvgAboutImage />
+              <SvgHeaderImage mainImageColor={mainImageColor} />
             </ImgBox>
           </Column>
         </HeaderRow>
@@ -49,4 +51,4 @@ const AboutHeader = ({
   );
 };
 
-export default AboutHeader;
+export default Header;
