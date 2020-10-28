@@ -14,7 +14,6 @@ import {
   SubmitBtnBox,
   TextContainer,
   InfoBox,
-  NameInfo,
 } from "./Form.elements";
 
 const Form = () => {

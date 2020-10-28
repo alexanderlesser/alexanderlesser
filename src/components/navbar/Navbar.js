@@ -71,7 +71,7 @@ const Navbar = () => {
                 initial="hidden"
                 animate="visible"
               >
-                <NavLinks to="/">Portfolio</NavLinks>
+                <NavLinks to="/portfolio">Portfolio</NavLinks>
               </NavItem>
             </NavMenu>
           </NavMenuBox>

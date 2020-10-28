@@ -5,7 +5,6 @@ export const headerObj = {
   topLine: "Hi, I am",
   mainLine: "Alexander Lesser",
   description: "Welcome to my page!",
-  mainImageColor: "#5d12ff",
 };
 
 export const midSectionObj = {
@@ -14,7 +13,7 @@ export const midSectionObj = {
   lightText: true,
   topLine: "",
   mainLine: "About Me",
-  description: `Well I did not see me here when I look back at the past three years. 
+  description: `Well I did not see myself here when I look back at the past three years. 
   To think I would graduate from the university in 2020 as a system developer. When I 
   think about it, I am quite impressed with myself and how everything turned out. 
   But It was a long way coming. `,
@@ -32,5 +31,5 @@ export const midSectionObjTwo = {
   description: `Check out my own projects if you have the time`,
   buttonPrimary: false,
   buttonText: "My Projects",
-  path: "/projects",
+  path: "/portfolio",
 };

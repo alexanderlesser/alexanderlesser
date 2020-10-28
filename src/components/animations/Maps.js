@@ -1,6 +1,4 @@
 import React from "react";
-import { IoIosAirplane } from "react-icons/io";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 import MapTwo from "../svgs/PlaneMap";
 

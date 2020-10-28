@@ -8,3 +8,4 @@ export { default as MidSection } from "./midSection/MidSection";
 export { default as Arrow } from "./arrow/Arrow";
 export { default as Maps } from "./animations/Maps";
 export { default as Form } from "./form/Form";
+export { default as Projects } from "./projectsComponent/Project";

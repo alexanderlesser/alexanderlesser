@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FormBox = styled.div`
   width: 100%;
   height: 100%;
-  /* background: ${({ lightBg }) => (lightBg ? "#a6acb3" : "#202121")}; */
   background-color: #202121;
   color: #fff;
   display: flex;
@@ -34,16 +33,6 @@ export const InfoBox = styled.div`
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
-`;
-
-export const NameInfo = styled.div`
-  border: 2px solid purple;
-  height: 100%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 `;
 
@@ -106,6 +95,7 @@ export const Input = styled.input`
 
 export const TextAreaBox = styled.div`
   width: 100%;
+  height: 45vh;
 `;
 
 export const TextArea = styled.textarea`
@@ -144,7 +134,7 @@ export const TextArea = styled.textarea`
 export const SubmitBtnBox = styled.div`
   width: 100%;
   height: 10vh;
-  margin-top: 10px;
+  margin-top: 40px;
   padding-right: 10px;
   display: flex;
   align-items: center;

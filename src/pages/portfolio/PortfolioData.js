@@ -1,9 +1,14 @@
 export const headerObj = {
   lightBg: false,
-  flexDirectionRow: false,
+  flexDirectionRow: true,
   lightText: false,
-  topLine: "",
-  mainLine: "My Projects",
-  description: `My portfolio where I upload projects I have done.`,
-  path: "/portfolio",
+  topLine: "This is my",
+  mainLine: "Portfolio",
+  description: "My portfolio where I upload my projects.",
+};
+
+export const projectObj = {
+  lightBg: "true",
+  flexDirectionRow: "true",
+  lightText: "true",
 };

@@ -1,14 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-
-const wheelVariants = {
-  visible: {
-    rotate: 360,
-    transition: {
-      repeat: Infinity,
-    },
-  },
-};
 
 const SvgBus = () => {
   return (

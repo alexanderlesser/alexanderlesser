@@ -16,7 +16,6 @@ const iconVariants = {
 };
 
 const IconHolder = styled(motion.div)`
-  /* color: #2a2931; */
   position: relative;
   z-index: 3;
   height: 100%;
@@ -38,7 +37,6 @@ const IconHolder = styled(motion.div)`
 
 const ATag = styled.a`
   color: #a9b3c1;
-  border: 1 px solid green;
   height: 100%;
   display: flex;
   align-items: center;

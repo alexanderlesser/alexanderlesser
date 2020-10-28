@@ -1,5 +1,4 @@
 import React from "react";
-import SvgHeaderImage from "../svgs/SvgHeaderImage";
 import TextSection from "../textSection/TextSection";
 import { HeaderBackground, HeaderRow, Column, ImgBox } from "./Header.elements";
 
@@ -24,7 +23,6 @@ const Header = ({
   description,
   mainImageColor,
   children,
-  children2,
 }) => {
   return (
     <>
@@ -36,14 +34,10 @@ const Header = ({
               topLine={topLine}
               mainLine={mainLine}
               description={description}
-            >
-              {children}
-            </TextSection>
+            ></TextSection>
           </Column>
           <Column>
-            <ImgBox>
-              <SvgHeaderImage mainImageColor={mainImageColor} />
-            </ImgBox>
+            <ImgBox>{children}</ImgBox>
           </Column>
         </HeaderRow>
       </HeaderBackground>

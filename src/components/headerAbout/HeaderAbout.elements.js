@@ -21,7 +21,7 @@ export const HeaderBackground = styled.div`
 `;
 
 export const IconsBox = styled.div`
-  width: 13%;
+  width: 15%;
   height: 100%;
 
   @media screen and (max-width: 885px) {
@@ -40,7 +40,7 @@ export const IconsBox = styled.div`
 
 export const ContentBox = styled.div`
   padding-top: 20px;
-  width: 87%;
+  width: 85%;
   height: 100%;
 
   @media screen and (max-width: 885px) {
@@ -52,13 +52,10 @@ export const HeaderRow = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  /* flex-direction: row; */
   flex-direction: ${({ flexDirectionRow }) =>
     flexDirectionRow ? "row" : "row-reverse"};
   justify-content: flex-start;
   align-items: center;
-  /* flex-direction: ${({ aboutHeaderFlexDirection }) =>
-    aboutHeaderFlexDirection ? "row-reverse" : "row"}; */
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -99,6 +96,4 @@ export const ImgBox = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* justify-content: ${({ imgWrapperDisplay }) =>
-    imgWrapperDisplay ? "#flex-start" : "flex-end"}; */
 `;

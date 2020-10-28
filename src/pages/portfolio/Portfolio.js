@@ -1,14 +1,16 @@
 import React from "react";
-import { MidSection } from "../../components";
+import { Form, Header, Projects } from "../../components";
 import SvgProjects from "../../components/svgs/SvgProjects";
-import { headerObj } from "./PortfolioData";
+import { headerObj, projectObj } from "./PortfolioData";
 
 const Portfolio = () => {
   return (
     <>
-      <MidSection {...headerObj}>
+      <Header {...headerObj}>
         <SvgProjects mainImageColor="#5d12ff" />
-      </MidSection>
+      </Header>
+      <Projects {...projectObj} />
+      <Form />
     </>
   );
 };

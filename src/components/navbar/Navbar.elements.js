@@ -114,6 +114,10 @@ export const NavLinks = styled(Link)`
   position: relative;
   padding: 10px 20px;
 
+  @media screen and (max-width: 960px) {
+    padding: 50px 0;
+  }
+
   @media screen and (min-width: 961px) {
     &::after {
       /* create pseudo element */
