@@ -1,8 +1,14 @@
 import React from "react";
-import { HeaderAbout, Story, Cards, Arrow, Maps, Form } from "../../components";
-import Bus from "../../components/animations/Bus";
-import Notepad from "../../components/animations/Notepad";
-import Oslo from "../../components/animations/Oslo";
+import {
+  HeaderAbout,
+  Story,
+  Cards,
+  Arrow,
+  Maps,
+  Form,
+  Oslo,
+  Notepad,
+} from "../../components";
 import {
   headerAboutObj,
   storyObjOne,

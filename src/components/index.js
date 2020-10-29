@@ -9,3 +9,5 @@ export { default as Arrow } from "./arrow/Arrow";
 export { default as Maps } from "./animations/Maps";
 export { default as Form } from "./form/Form";
 export { default as Projects } from "./projectsComponent/Project";
+export { default as Oslo } from "./animations/Oslo";
+export { default as Notepad } from "./animations/Notepad";
