@@ -54,17 +54,23 @@ const Form = () => {
         <FormContainer>
           <FormElement onSubmit={sendEmail}>
             <InputBox>
-              <Input type="text" placeholder="Name" name="form_name" />
+              <Input type="text" placeholder="Name" name="form_name" required />
             </InputBox>
             <InputBox>
               <Input
                 type="email"
                 placeholder="Email Address"
                 name="form_email"
+                required
               />
             </InputBox>
             <InputBox>
-              <Input type="text" placeholder="Subject" name="form_subject" />
+              <Input
+                type="text"
+                placeholder="Subject"
+                name="form_subject"
+                required
+              />
             </InputBox>
             <TextAreaBox>
               <TextArea
@@ -72,6 +78,7 @@ const Form = () => {
                 rows="10"
                 placeholder="Your message"
                 name="form_message"
+                required
               />
             </TextAreaBox>
             <SubmitBtnBox>

@@ -23,7 +23,7 @@ const Btn = styled.button`
   }
 
   &:active {
-    transform: translateY(5px);
+    transform: translateY(2px);
   }
 
   @media screen and (min-width: 769px) {

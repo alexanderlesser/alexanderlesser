@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ProjectBox = styled.div`
   width: 100%;
@@ -66,9 +67,10 @@ export const ProjectName = styled.h1`
   }
 `;
 
-export const Description = styled.p`
+export const Description = styled(motion.p)`
   max-width: 100%;
   font-size: 1.2rem;
+  list-style: none;
   line-height: 1.5rem;
   color: ${({ lightText }) => (lightText ? "#242129" : "#a9b3c1")};
 

@@ -17,6 +17,12 @@ import {
   ImgTag,
 } from "./Project.elements";
 
+const linkVariants = {
+  hover: {
+    color: "#5d12ff",
+  },
+};
+
 const Project = ({ lightBg, flexDirectionRow, lightText }) => {
   return (
     <>
@@ -24,26 +30,32 @@ const Project = ({ lightBg, flexDirectionRow, lightText }) => {
         <Row flexDirectionRow={flexDirectionRow}>
           <Column>
             <InfoSection>
-              <ProjectName lightText={lightText}>Portfolio</ProjectName>
+              <ProjectName lightText={lightText}>
+                Portfolio - Website
+              </ProjectName>
               <Description lightText={lightText}>
-                My portfolio developed with React as framework,
+                My portfolio website developed with React as framework,
                 Styled-Components and Framer Motion for animations.
               </Description>
             </InfoSection>
 
-            <GithubBox>
-              <GithubIconBox>
-                <LinkTag
-                  lightText={lightText}
-                  href="https://github.com/alexanderlesser/alexanderlesser.se"
-                >
+            <LinkTag
+              lightText={lightText}
+              href="https://github.com/alexanderlesser/alexanderlesser.se"
+            >
+              <GithubBox>
+                <GithubIconBox>
                   <FaGithub />
-                </LinkTag>
-              </GithubIconBox>
-              <Description lightText={lightText}>
-                Find this project on GitHub
-              </Description>
-            </GithubBox>
+                </GithubIconBox>
+                <Description
+                  lightText={lightText}
+                  variants={linkVariants}
+                  whileHover="hover"
+                >
+                  Find this project on GitHub
+                </Description>
+              </GithubBox>
+            </LinkTag>
             <IconBox>
               <IconCardBox lightText={lightText}>
                 <SiJavascript />
