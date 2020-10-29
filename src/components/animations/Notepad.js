@@ -79,7 +79,7 @@ const Notepad = () => {
             strokeWidth=".80812"
           />
         </g>
-        <g id="layer6" fill="none" stroke="#787675" stroke-width="2">
+        <g id="layer6" fill="none" stroke="#787675" strokeWidth="2">
           <motion.path
             variants={pathVariants}
             initial="hidden"

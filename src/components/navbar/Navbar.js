@@ -38,7 +38,7 @@ const Navbar = () => {
     <>
       <Nav>
         <NavContainer>
-          <NavLogo to="/" onClick={handleClick}>
+          <NavLogo to="/" onClick={() => setClick(false)}>
             <LogoIcon />
           </NavLogo>
           <MobileIconBox onClick={handleClick}>
